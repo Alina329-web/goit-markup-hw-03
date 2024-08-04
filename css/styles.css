@@ -22,6 +22,19 @@ p {
 a {
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -108,7 +121,7 @@ a {
 /* #region hiro */
 .section-hero {
   background-color: #2e2f42;
-  padding-top: 188px 0;
+  padding: 188px 0;
 }
 .hero-title {
   font-weight: 700;
@@ -155,17 +168,7 @@ a {
 
 .advantages-title {
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-}
+
 .advantages-list {
   display: flex;
   gap: 24px;
@@ -246,6 +249,7 @@ a {
 /* #region portfolio */
 .section-portfolio {
   padding-top: 120px;
+  padding-bottom: 120px;
   border: 1px solid #e7e9fc;
 }
 .portfolio-title {
@@ -272,6 +276,7 @@ a {
 }
 .container-portfolio-text {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-item-title {
   font-weight: 500;
